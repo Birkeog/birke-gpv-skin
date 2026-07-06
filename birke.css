@@ -1,21 +1,22 @@
+html,
 body {
   background: transparent !important;
   margin: 0 !important;
   overflow: hidden !important;
 }
 
-.controller.ds4 {
+.controller,
+.controller.ds4,
+.ds4 {
   width: 900px !important;
   height: 563px !important;
-  background: url("https://cdn.jsdelivr.net/gh/Birkeog/birke-gpv-skin@main/controller.png") center center / contain no-repeat !important;
-}
-
-/* weißen Standard-Hintergrund entfernen */
-.controller {
+  background-image: url("https://cdn.jsdelivr.net/gh/Birkeog/birke-gpv-skin@main/controller.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
   background-color: transparent !important;
 }
 
-/* GPV-Standardflächen möglichst unsichtbar machen */
 .controller * {
   background-color: transparent !important;
 }
