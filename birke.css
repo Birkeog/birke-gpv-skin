@@ -6,7 +6,7 @@ body {
   overflow: hidden !important;
 }
 
-/* Hauptcontroller */
+/* Controller-Größe */
 .controller,
 .controller.ds4,
 .ds4 {
@@ -21,38 +21,13 @@ body {
   background-color: transparent !important;
 }
 
-/* Standard-GPV-Hintergründe entfernen */
+/* Weiße/alte GPV-Hintergründe entfernen */
 .controller {
   background-color: transparent !important;
 }
 
-/* Standardgrafiken möglichst ausblenden */
+/* Standard-Grafiken von GPV erstmal unsichtbar machen */
 .controller * {
   background-color: transparent !important;
   box-shadow: none !important;
-}
-
-/* Buttons erstmal sichtbar lassen, aber ohne eigene Flächen */
-.face,
-.dpad,
-.sticks,
-.bumper,
-.bumpers,
-.trigger,
-.triggers,
-.touchpad,
-.meta {
-  background: transparent !important;
-}
-
-/* Falls GPV Bilder/Sprites nutzt */
-.controller img,
-.ds4 img {
-  background: transparent !important;
-}
-
-/* OBS sauber transparent */
-canvas,
-svg {
-  background: transparent !important;
 }
