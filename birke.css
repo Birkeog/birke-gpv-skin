@@ -98,3 +98,9 @@ body {
   width: 750px;
   height: auto;
 }
+.controller {
+  background-image: url("https://birkeog.github.io/birke-gpv-skin/controller.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+}
