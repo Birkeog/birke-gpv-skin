@@ -1,32 +1,4 @@
 html,
 body {
   background: red !important;
-}html,
-body {
-  background: transparent !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-}
-
-.controller,
-.controller.ds4,
-.ds4 {
-  width: 900px !important;
-  height: 563px !important;
-
-  background-image: url("https://cdn.jsdelivr.net/gh/Birkeog/birke-gpv-skin@main/controller.png") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-color: transparent !important;
-}
-
-/* Standard-Hintergrund von GPV weg */
-.controller {
-  background-color: transparent !important;
-}
-
-/* GPV-Elemente erstmal transparent machen */
-.controller * {
-  background-color: transparent !important;
 }
