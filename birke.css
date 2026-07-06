@@ -1,4 +1,58 @@
 html,
 body {
-  background: red !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+/* Hauptcontroller */
+.controller,
+.controller.ds4,
+.ds4 {
+  width: 900px !important;
+  height: 563px !important;
+  position: relative !important;
+
+  background-image: url("https://cdn.jsdelivr.net/gh/Birkeog/birke-gpv-skin@main/controller.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: transparent !important;
+}
+
+/* Standard-GPV-Hintergründe entfernen */
+.controller {
+  background-color: transparent !important;
+}
+
+/* Standardgrafiken möglichst ausblenden */
+.controller * {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Buttons erstmal sichtbar lassen, aber ohne eigene Flächen */
+.face,
+.dpad,
+.sticks,
+.bumper,
+.bumpers,
+.trigger,
+.triggers,
+.touchpad,
+.meta {
+  background: transparent !important;
+}
+
+/* Falls GPV Bilder/Sprites nutzt */
+.controller img,
+.ds4 img {
+  background: transparent !important;
+}
+
+/* OBS sauber transparent */
+canvas,
+svg {
+  background: transparent !important;
 }
