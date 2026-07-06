@@ -1,48 +1,100 @@
-html,
+/* PS4 / DualShock 4 Controller Overlay CSS */
+
 body {
-  margin: 0 !important;
-  padding: 0 !important;
   background: transparent !important;
-  background-color: rgba(0, 0, 0, 0) !important;
-  overflow: hidden !important;
+  margin: 0;
+  overflow: hidden;
 }
 
-#app,
-#__next,
-.app,
-.page,
-.gamepad,
-.gamepad-container,
-.controller-wrapper,
-.controller-container {
-  background: transparent !important;
-  background-color: rgba(0, 0, 0, 0) !important;
+/* Controller insgesamt */
+.controller {
+  transform: scale(1);
+  filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.85));
 }
 
-/* Controller-Bild */
-.controller,
-.controller.ds4,
-.ds4 {
-  width: 900px !important;
-  height: 563px !important;
-  position: relative !important;
-
-  background-image: url("https://cdn.jsdelivr.net/gh/Birkeog/birke-gpv-skin@main/controller.png") !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
+/* PS4 Controller */
+.controller.ds4 {
   background-color: transparent !important;
 }
 
-/* Weiße GPV-Hintergründe entfernen */
-.controller,
-.ds4 {
-  background-color: transparent !important;
+/* Alle Buttons */
+.button {
+  opacity: 0.35;
+  transition: opacity 0.08s ease, transform 0.08s ease, filter 0.08s ease;
 }
 
-/* Standardflächen transparent machen */
-.controller *,
-.ds4 * {
-  background-color: transparent !important;
-  box-shadow: none !important;
+/* Button gedrückt */
+.button.pressed {
+  opacity: 1;
+  transform: scale(1.12);
+  filter: brightness(1.7) drop-shadow(0 0 8px #ffffff);
+}
+
+/* Kreis, Kreuz, Quadrat, Dreieck */
+.face {
+  opacity: 0.4;
+}
+
+.face.pressed {
+  opacity: 1;
+  transform: scale(1.15);
+  filter: brightness(1.8) drop-shadow(0 0 10px #ffffff);
+}
+
+/* D-Pad */
+.dpad {
+  opacity: 0.45;
+}
+
+.dpad.pressed {
+  opacity: 1;
+  filter: brightness(1.8) drop-shadow(0 0 8px #ffffff);
+}
+
+/* Analog-Sticks */
+.stick {
+  opacity: 0.85;
+  transition: transform 0.04s linear, filter 0.08s ease;
+}
+
+.stick.pressed {
+  filter: brightness(1.7) drop-shadow(0 0 8px #ffffff);
+}
+
+/* L1 / R1 */
+.bumpers {
+  opacity: 0.45;
+}
+
+.bumpers.pressed {
+  opacity: 1;
+  filter: brightness(1.8) drop-shadow(0 0 10px #ffffff);
+}
+
+/* L2 / R2 */
+.trigger {
+  opacity: 0.45;
+}
+
+.trigger.pressed {
+  opacity: 1;
+  filter: brightness(1.8) drop-shadow(0 0 10px #ffffff);
+}
+
+/* Touchpad / Start / Share */
+.touchpad,
+.meta {
+  opacity: 0.45;
+}
+
+.touchpad.pressed,
+.meta.pressed {
+  opacity: 1;
+  filter: brightness(1.7) drop-shadow(0 0 8px #ffffff);
+}
+
+/* Größe anpassen */
+.controller {
+  width: 750px;
+  height: auto;
 }
