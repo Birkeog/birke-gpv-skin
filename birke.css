@@ -4,29 +4,18 @@ body {
   overflow: hidden !important;
 }
 
-/* GPV-Hauptcontainer sichtbar machen */
-.controller,
-.controller.ds4,
-.ds4 {
+.controller.ds4 {
   width: 900px !important;
-  height: 600px !important;
+  height: 563px !important;
   background: url("https://cdn.jsdelivr.net/gh/Birkeog/birke-gpv-skin@main/controller.png") center center / contain no-repeat !important;
-  position: relative !important;
 }
 
-/* Standard-GPV-Grafiken erstmal ausblenden */
-.controller div,
-.ds4 div {
+/* weißen Standard-Hintergrund entfernen */
+.controller {
   background-color: transparent !important;
 }
 
-/* Buttons/Sticks erstmal sichtbar lassen, damit du Input testen kannst */
-.face,
-.dpad,
-.sticks,
-.bumpers,
-.triggers,
-.touchpad,
-.meta {
-  opacity: 1 !important;
+/* GPV-Standardflächen möglichst unsichtbar machen */
+.controller * {
+  background-color: transparent !important;
 }
