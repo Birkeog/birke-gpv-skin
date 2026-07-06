@@ -1,5 +1,8 @@
 html,
 body {
+  background: red !important;
+}html,
+body {
   background: transparent !important;
   margin: 0 !important;
   overflow: hidden !important;
